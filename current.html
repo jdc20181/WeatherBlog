@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="main.css">
+   <link rel="stylesheet" type="text/css" href="current.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<div class="content">
+  <ul>
+  <li> <a  href="index.html">Home</a></li>
+     <li> <a  class="active" href="Current.html">Current Weather </a></li>
+     <li> <a href="7day.html">Week Forecast </a></li>
+     <li> <a href="https://jeffsweatherblog.wordpress.com/">Posts </a> </li>
+</ul>
+ <h2> Current Weather </h2>
+ 
+ <div id="weather"></div>
+ 
+ 
+ 
+ 
+   </div>
+  <script>
+  // v3.1.0
+//Docs at http://simpleweatherjs.com
+$(document).ready(function() {
+  $.simpleWeather({
+    location: 'Jasper, IN',
+    woeid: '',
+    unit: 'f',
+    success: function(weather) {
+      html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+      html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+      html += '<li class="currently">'+weather.currently+'</li>';
+      html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
+  
+      $("#weather").html(html);
+    },
+    error: function(error) {
+      $("#weather").html('<p>'+error+'</p>');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
