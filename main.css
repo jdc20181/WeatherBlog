@@ -1,12 +1,4 @@
-img{
-border-style: solid;
-    border-radius:50%;
-    border-width: medium;
-    border-color:white;
-    display: block;
-     margin: auto;
-    /*width: 40%;*/
-}
+
 body {
     background: #555;
 }
