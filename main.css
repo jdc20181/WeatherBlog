@@ -105,6 +105,11 @@ input[type=submit]:hover {
     margin: auto;
     background: white;
     padding: 10px;
+       
+}
+img{
+    width: 50%;
+    height: auto;
 }
 @media screen (max-width: 600px){
     ul.topnav ul.right, 
