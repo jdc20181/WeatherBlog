@@ -1,14 +1,16 @@
 
 body {
-    background: #555;
+    background: #333;
+        text-color: #fff
 }
 
 .content {
     max-width: 500px;
     margin:auto;
-    background: #555;
+    background: #333;
     padding: 10px;
     Text-align:center;
+    text-color: #fff
 }
 ul {
     list-style-type: none;
@@ -31,11 +33,11 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #4CAF50;
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: #333;
 }
 input[type=text],select {
     width: 100%;
