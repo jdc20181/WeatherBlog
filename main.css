@@ -1,7 +1,7 @@
 
 body {
     background: #333;
-        text-color: #fff
+     color: #fff
 }
 
 .content {
@@ -10,7 +10,7 @@ body {
     background: #333;
     padding: 10px;
     Text-align:center;
-    text-color: #fff
+color: #fff
 }
 ul {
     list-style-type: none;
